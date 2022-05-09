@@ -17,10 +17,9 @@
 
 	.about {
 		&__info {
-			flex: 0 0 70%;
-			max-width: 70%;
-
 			&-item {
+				padding: 10px;
+				margin-bottom: 0;
 				flex: 0 0 50%;
 				max-width: 50%;
 
@@ -30,8 +29,29 @@
 			}
 		}
 
-		// &__buttons {
-		// 	flex: 0 0 60%;
-		// }
+		&__skills {
+			&-item {
+				padding: 10px;
+				margin-bottom: 0;
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+		}
+	}
+
+	.edu_exp {
+		.row {
+			flex-direction: row;
+		}
+
+		&__edu {
+			flex: 1 1 calc(50% - 20px);
+			margin-right: 20px;
+		}
+
+		&__exp {
+			flex: 1 1 calc(50% - 20px);
+			margin-left: 20px;
+		}
 	}
 }

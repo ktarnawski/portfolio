@@ -11,6 +11,20 @@
 		&__info {
 			flex: 0 0 50%;
 			max-width: 50%;
+			padding-top: 15px;
+
+			&-item {
+				margin-bottom: 0;
+
+				span {
+					flex-basis: 80%;
+				}
+			}
+		}
+
+		&__skills {
+			flex: 0 0 50%;
+			max-width: 50%;
 		}
 	}
 }

@@ -29,11 +29,12 @@
             <nav class="nav">
                 <a href="#home" class="nav__logo">LOGO</a>
                 <ul class="nav__links">
-                    <li><a href="#" class="nav__links-link active">nav 1</a></li>
-                    <li><a href="#" class="nav__links-link">nav 2</a></li>
-                    <li><a href="#" class="nav__links-link">nav 3</a></li>
-                    <li><a href="#" class="nav__links-link">nav 4</a></li>
-                    <li><a href="#" class="nav__links-link">nav 5</a></li>
+                    <li><a href="#" class="nav__links-link active">HOME</a></li>
+                    <li><a href="#" class="nav__links-link">About</a></li>
+                    <li><a href="#" class="nav__links-link">Education</a></li>
+                    <li><a href="#" class="nav__links-link">Experience</a></li>
+                    <li><a href="#" class="nav__links-link">Portfolio</a></li>
+                    <li><a href="#" class="nav__links-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -48,7 +49,8 @@
                             <h3 class="home__info__subheader">I'm a
                                 <span class="home__info__subheader-profession">web developer</span>
                             </h3>
-                            <p class="home__info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                            <p class="home__info__text section-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Vel
                                 fugit reiciendis odio eos cumque dolor.</p>
                             <a href="#contact" class="home__info__link btn">About me</a>
                         </div>
@@ -59,46 +61,187 @@
                 </div>
             </section>
 
-            <section class="about section">
+            <section class="about section hidden">
                 <div class="wrapper">
                     <div class="row">
                         <h2 class="about__title section-title">About me</h2>
                     </div>
                     <div class="row">
                         <h3 class="about__subtitle">My name is <span class="about__name">Krzysztof Tarnawski</span></h3>
-                        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta
+                        <p class="about__text section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat soluta
                             molestiae eaque vitae. Cum asperiores, sunt eos maiores quo earum quos qui vitae molestias.
                             Vero eaque qui veritatis praesentium eius nesciunt voluptas! Dicta pariatur commodi
                             laboriosam eum. Obcaecati, porro ipsum.</p>
                         <div class="about__info">
-                            <p class="about__info-item">
-                                <i class="fa-solid fa-cake-candles"></i><span>6 feb 1994</span>
-                            </p>
-                            <p class="about__info-item">
-                                <i class="fa-solid fa-globe"></i><span>www.domain.com</span>
-                            </p>
-                            <p class="about__info-item">
-                                <i class="fa-solid fa-at"></i><span>mail@mail.com</span>
-                            </p>
-                            <p class="about__info-item">
-                                <i class="fa-solid fa-phone"></i><span>+48 444 555 666</span>
-                            </p>
-                            <p class="about__info-item">
-                                <i class="fa-solid fa-graduation-cap"></i><span>Bachelor of CS</span>
-                            </p>
-                            <p class="about__info-item">
-                                <i class="fa-solid fa-city"></i><span>Szczecin</span>
-                            </p>
-                            <p class="about__info-item">
-                                <i class="fa-brands fa-slideshare"></i><span>Available</span>
-                            </p>
+                            <div class="about__info-box">
+                                <p class="about__info-item">
+                                    <i class="fa-solid fa-cake-candles"></i><span>6 feb 1994</span>
+                                </p>
+                                <p class="about__info-item">
+                                    <i class="fa-solid fa-globe"></i><span>www.domain.com</span>
+                                </p>
+                                <p class="about__info-item">
+                                    <i class="fa-solid fa-at"></i><span>mail@mail.com</span>
+                                </p>
+                                <p class="about__info-item">
+                                    <i class="fa-solid fa-phone"></i><span>+48 444 555 666</span>
+                                </p>
+                                <p class="about__info-item">
+                                    <i class="fa-solid fa-graduation-cap"></i><span>Bachelor of CS</span>
+                                </p>
+                                <p class="about__info-item">
+                                    <i class="fa-solid fa-city"></i><span>Szczecin</span>
+                                </p>
+                                <p class="about__info-item">
+                                    <i class="fa-brands fa-slideshare"></i><span>Available</span>
+                                </p>
+                            </div>
                         </div>
                         <div class="about__skills">
-                            Skills
+                            <div class="about__skills-item">
+                                <h5>Communication</h5>
+                                <div class="progress">
+                                    <div class="progress-in" data-progress="100" data-delay="0"></div>
+                                    <div class="progress-percent">100%</div>
+                                </div>
+                            </div>
+                            <div class="about__skills-item">
+                                <h5>Teamwork</h5>
+                                <div class="progress">
+                                    <div class="progress-in" data-progress="100" data-delay="100"></div>
+                                    <div class="progress-percent">100%</div>
+                                </div>
+                            </div>
+                            <div class="about__skills-item">
+                                <h5>Git</h5>
+                                <div class="progress">
+                                    <div class="progress-in" data-progress="95" data-delay="200"></div>
+                                    <div class="progress-percent">95%</div>
+                                </div>
+                            </div>
+                            <div class="about__skills-item">
+                                <h5>HTML5</h5>
+                                <div class="progress">
+                                    <div class="progress-in" data-progress="90" data-delay="300"></div>
+                                    <div class="progress-percent">90%</div>
+                                </div>
+                            </div>
+                            <div class="about__skills-item">
+                                <h5>CSS</h5>
+                                <div class="progress">
+                                    <div class="progress-in" data-progress="80" data-delay="400"></div>
+                                    <div class="progress-percent">80%</div>
+                                </div>
+                            </div>
+                            <div class="about__skills-item">
+                                <h5>JS</h5>
+                                <div class="progress">
+                                    <div class="progress-in" data-progress="75" data-delay="500"></div>
+                                    <div class="progress-percent">75%</div>
+                                </div>
+                            </div>
+                            <div class="about__skills-item">
+                                <h5>C/C++</h5>
+                                <div class="progress">
+                                    <div class="progress-in" data-progress="70" data-delay="600"></div>
+                                    <div class="progress-percent">70%</div>
+                                </div>
+                            </div>
+                            <div class="about__skills-item">
+                                <h5>PHP</h5>
+                                <div class="progress">
+                                    <div class="progress-in" data-progress="40" data-delay="700"></div>
+                                    <div class="progress-percent">40%</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="about__buttons">
                             <a href="#" class="about__buttons-cv btn">Get CV</a>
-                            <a href="#contact" class="about__buttons-contact btn">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="edu_exp section hidden">
+                <div class="wrapper">
+                    <div class="row">
+                        <h2 class="edu_exp__title section-title">Education and Experience</h2>
+                    </div>
+                    <div class="row">
+                        <p class="edu_exp__text section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat soluta
+                            molestiae eaque vitae. Cum asperiores, sunt eos maiores quo earum quos qui vitae molestias.
+                            Vero eaque qui veritatis praesentium eius nesciunt voluptas! Dicta pariatur commodi
+                            laboriosam eum. Obcaecati, porro ipsum.</p>
+                        <div class="edu_exp__edu">
+                            <div class="edu_exp__edu__box">
+                                <div class="edu_exp__edu__box-item">
+                                    <div class="edu_exp__edu__box-item-dot"></div>
+                                    <h3 class="edu_exp__edu__box-item-date">2015-10 - 2020-12</h3>
+                                    <h4 class="edu_exp__edu__box-item-title">Bachelor of Computer Science</h4>
+                                    <p class="edu_exp__edu__box-item-text">West Pomeranian University of Technology,
+                                        Szczecin</p>
+                                </div>
+                                <div class="edu_exp__edu__box-item">
+                                    <div class="edu_exp__edu__box-item-dot"></div>
+                                    <h3 class="edu_exp__edu__box-item-date">2010-09 - 2014-06</h3>
+                                    <p class="edu_exp__edu__box-item-text">Vocational Technical High School for Computer
+                                        Science, Kołobrzeg</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edu_exp__exp">
+                            <div class="edu_exp__exp__box">
+                                <div class="edu_exp__exp__box-item">
+                                    <div class="edu_exp__exp__box-item-dot"></div>
+                                    <h3 class="edu_exp__exp__box-item-date">2022 - present</h3>
+                                    <h4 class="edu_exp__exp__box-item-title">Web Developer</h4>
+                                    <p class="edu_exp__exp__box-item-text">Freelancer</p>
+                                </div>
+                                <div class="edu_exp__exp__box-item">
+                                    <div class="edu_exp__exp__box-item-dot"></div>
+                                    <h3 class="edu_exp__exp__box-item-date">2018-07 - present</h3>
+                                    <h4 class="edu_exp__exp__box-item-title">Software Engineer</h4>
+                                    <h4 class="edu_exp__exp__box-item-title">Junior Software Engineer</h4>
+                                    <h4 class="edu_exp__exp__box-item-title">Intern</h4>
+                                    <p class="edu_exp__exp__box-item-text">Mobica Limited, Szczecin</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edu_exp__buttons">
+                            <a href="#" class="edu_exp__buttons-cv btn">Get CV</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portfolio section hidden">
+                <div class="wrapper">
+                    <div class="row">
+                        <h2 class="portfolio__title section-title">Portfolio</h2>
+                    </div>
+                    <div class="row">
+                        <p class="portfolio__text section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat soluta molestiae eaque vitae. Cum asperiores, sunt eos maiores quo earum quos qui
+                            vitae molestias. Vero eaque qui veritatis praesentium eius nesciunt voluptas! Dicta pariatur
+                            commodi laboriosam eum. Obcaecati, porro ipsum.
+                        </p>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact section">
+                <div class="wrapper">
+                    <div class="row">
+                        <h2 class="contact__title section-title">Contact</h2>
+                    </div>
+                    <div class="row">
+                        <div class="contact__info-box">
+                            <div class="contact__info-item">
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,6 +249,9 @@
         </main>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="dist/js/main.min.js"></script>
 </body>
 

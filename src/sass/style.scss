@@ -73,6 +73,11 @@ a {
 	margin-top: 8px;
 }
 
+.section-text {
+	color: c.$text-grey;
+	font-size: s.$s;
+}
+
 section.hidden {
 	display: none;
 }
@@ -80,7 +85,6 @@ section.hidden {
 .row {
 	display: flex;
 	flex-direction: column;
-	// align-items: center;
 	flex-wrap: wrap;
 	margin-top: 40px;
 	position: relative;
@@ -169,7 +173,7 @@ section.hidden {
 		flex-basis: 50%;
 
 		li {
-			padding: 20px;
+			padding: 20px 0;
 			border-bottom: 1px solid c.$bg-grey;
 		}
 
@@ -234,7 +238,6 @@ section.hidden {
 
 		&__text {
 			margin-bottom: 50px;
-			font-size: 1.3rem;
 		}
 	}
 
@@ -278,6 +281,7 @@ section.hidden {
 	}
 }
 
+// ABOUT
 .about {
 	&__subtitle {
 		color: c.$text-grey;
@@ -289,17 +293,15 @@ section.hidden {
 		color: c.$skin-color;
 	}
 
-	&__text {
-		color: c.$text-grey;
-		font-size: s.$s;
-	}
-
 	&__info {
-		display: flex;
-		flex-wrap: wrap;
-		flex: 0 0 100%;
 		max-width: 100%;
 		margin-top: 40px;
+
+		&-box {
+			display: flex;
+			flex-wrap: wrap;
+			flex: 0 0 100%;
+		}
 
 		&-item {
 			display: flex;
@@ -323,24 +325,154 @@ section.hidden {
 	}
 
 	&__skills {
-		flex: 0 0 40%;
-		max-width: 40%;
-		margin-top: 15px;
+		display: flex;
+		flex-wrap: wrap;
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-top: 40px;
+
+		&-item {
+			display: flex;
+			flex-direction: column;
+			font-size: s.$s;
+			flex: 0 0 100%;
+			margin-bottom: 15px;
+
+			h5 {
+				margin-bottom: 4px;
+				font-size: s.$s;
+				color: c.$text-grey;
+			}
+
+			.progress {
+				position: relative;
+				background-color: c.$bg-light-grey;
+				height: 7px;
+				border-radius: 8px;
+				width: 100%;
+
+				.progress-in {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 0;
+					height: 100%;
+					border-radius: 8px;
+					background-color: c.$skin-color;
+				}
+
+				.progress-percent {
+					position: absolute;
+					right: 0;
+					top: -25px;
+					color: c.$text-grey;
+				}
+			}
+		}
 	}
 
 	&__buttons {
 		display: flex;
 		margin-top: 40px;
 		flex: 0 0 100%;
-		justify-content: space-around;
+		justify-content: center;
+	}
+}
 
-		// &-cv {
-		// 	flex: 0 0 50%;
-		// }
+// EDUCATION AND EXPERIENCE
+.edu_exp {
+	&__text {
+		flex: 0 0 100%;
+	}
 
-		// &-contact {
-		// 	flex: 0 0 50%;
-		// }
+	&__edu,
+	&__exp {
+		flex: 0 0 100%;
+		margin-top: 40px;
+
+		&__box {
+			background-color: c.$bg-light-grey;
+			border: 1px solid c.$bg-grey;
+			border-radius: 8px;
+			box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+			padding: 30px 15px;
+
+			&-item {
+				position: relative;
+				padding: 0 0 30px 15px;
+
+				&-dot {
+					position: absolute;
+					top: 7px;
+					left: -5px;
+					width: 11px;
+					height: 11px;
+					border-radius: 50%;
+					background-color: c.$skin-color;
+				}
+
+				&-date,
+				&-title,
+				&-text {
+					color: c.$text-grey;
+				}
+
+				&-date {
+					font-weight: 800;
+					margin-bottom: 5px;
+					font-size: s.$m;
+				}
+
+				&-title {
+					position: relative;
+					font-weight: 600;
+					font-size: s.$s;
+				}
+
+				&-text {
+					font-weight: 300;
+					font-size: s.$s;
+				}
+			}
+
+			&-item:last-child {
+				padding-bottom: 0;
+			}
+
+			&-item::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 1px;
+				height: 100%;
+				background-color: c.$skin-color;
+			}
+		}
+	}
+
+	&__exp {
+		&__box {
+			&-item {
+				&-title::before {
+					content: "";
+					position: absolute;
+					border-radius: 50%;
+					top: 6px;
+					left: -18px;
+					width: 7px;
+					height: 7px;
+					background-color: c.$skin-color;
+				}
+			}
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		margin-top: 40px;
+		flex: 0 0 100%;
+		justify-content: center;
 	}
 }
 
