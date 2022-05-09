@@ -100,6 +100,7 @@ section.hidden {
 	border: none;
 	display: inline-block;
 	transition: transform 0.3s;
+	cursor: pointer;
 
 	&:hover {
 		transform: scale(1.1);
@@ -473,6 +474,98 @@ section.hidden {
 		margin-top: 40px;
 		flex: 0 0 100%;
 		justify-content: center;
+	}
+}
+
+// PORTOLIO
+// .portfolio {
+// }
+
+// CONTACT
+
+.section.contact {
+	margin-top: 0;
+}
+
+.contact {
+	&__row {
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__info {
+		&-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding-bottom: 30px;
+
+			&-icon {
+				font-size: s.$xl;
+				color: c.$skin-color;
+			}
+
+			&-heading {
+				font-size: s.$m;
+				padding: 10px 0;
+				color: c.$text-grey;
+			}
+
+			&-text {
+				font-size: s.$m;
+				color: c.$text-grey;
+			}
+		}
+	}
+
+	&__form {
+		flex: 0 0 100%;
+		max-width: 100%;
+
+		&-group {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		&-item {
+			padding: 0 10px;
+			margin-bottom: 20px;
+
+			input,
+			textarea {
+				padding: 10px 20px;
+				width: 100%;
+				height: 30px;
+				border-radius: 10px;
+				background-color: c.$bg-light-grey;
+				border: 1px solid c.$bg-grey;
+			}
+
+			input:focus,
+			textarea:focus {
+				box-shadow: 0 0 20px rgba(48, 46, 77, 0.2);
+				outline: none;
+			}
+
+			textarea {
+				min-height: 100px;
+				max-height: 100px;
+				min-width: 100%;
+				max-width: 100%;
+				resize: none;
+			}
+		}
+
+		.col-6 {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+
+		.col-12 {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
 	}
 }
 

@@ -54,4 +54,17 @@
 			margin-left: 20px;
 		}
 	}
+
+	.contact {
+		&__row {
+			flex-direction: row;
+		}
+
+		&__form {
+			.col-6 {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+		}
+	}
 }
