@@ -1,2 +1,37 @@
 @media screen and (min-width: 576px) {
+	.home {
+		&__info {
+			&__header {
+				font-size: s.$xl;
+			}
+
+			&__subheader {
+				font-size: s.$xl;
+			}
+
+			&__text {
+				font-size: s.$m;
+			}
+		}
+	}
+
+	.about {
+		&__info {
+			flex: 0 0 70%;
+			max-width: 70%;
+
+			&-item {
+				flex: 0 0 50%;
+				max-width: 50%;
+
+				i {
+					flex-basis: 15%;
+				}
+			}
+		}
+
+		// &__buttons {
+		// 	flex: 0 0 60%;
+		// }
+	}
 }

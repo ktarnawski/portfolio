@@ -1,14 +1,43 @@
 @media screen and (min-width: 768px) {
+	.section {
+		padding-left: 240px;
+	}
+
 	.hamburger {
 		display: none;
 	}
 
+	.wrapper {
+		padding: 0 20px;
+	}
+
 	.nav {
 		transform: translateX(0);
-		width: 270px;
+		opacity: 1;
+		width: 240px;
 	}
 
 	.home {
-		left: 270px;
+		padding-top: 80px;
+
+		&__info {
+			max-width: 60%;
+
+			&__header {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.about {
+		&__info {
+			flex: 0 0 70%;
+			max-width: 70%;
+		}
+	}
+
+	.row {
+		flex-direction: row;
+		align-items: stretch;
 	}
 }

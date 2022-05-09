@@ -1,2 +1,16 @@
 @media screen and (min-width: 992px) {
+	.section {
+		padding-left: 270px;
+	}
+
+	.nav {
+		width: 270px;
+	}
+
+	.about {
+		&__info {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+	}
 }
